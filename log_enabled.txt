@@ -1,0 +1,51 @@
+huawie_communication.c:detach_storage_driver:81: fd = 3
+huawie_communication.c:detach_storage_driver:84: ret(GETDRIVER) = 0
+huawie_communication.c:detach_storage_driver:91: get driver active driver = usb-storage, errno = 0, ret = 0
+detaching usb-storage driver
+huawie_communication.c:detach_storage_driver:100: detaching  usb-storage, errno = 0, ret = 0
+huawie_communication.c:main:420: ret = 0
+send_eject_sequence : con = 0x6034e0, msg[0] = 0x6034e0 
+huawie_communication.c:claim_interface:129: fd = 3, ret 0 errno 0
+huawie_communication.c:send_eject_sequence:357: ret(set_up_interface) = 0
+bulk_write : length = 62 and buffer = 5553424312345678000000000000061e000000000000000000000000000000
+__bulk_xfer : urbs = 0x1026010, nr_urbs = 1
+__bulk_xfer : buffer = 5553424312345678000000000000061e000000000000000000000000000000, 0x6034e0
+__bulk_xfer : urb_buffer ptr = 0x6034e0,  buffer = 5553424312345678000000000000061e000000000000000000000000000000, urb_len = 62, ep = 1
+submit_urb : submiturb ret = 0 errno = 0
+__bulk_xfer : transfer->status = 0
+__bulk_xfer : urb->status = 0 actual_length = 0
+send_eject_sequence : ret (bulk_write) = 0
+huawie_communication.c:send_eject_sequence:379: Read the response to message 1 (CSW) ...
+__bulk_xfer : urbs = 0x1026010, nr_urbs = 1
+__bulk_xfer : buffer = USBC4Vx, 0x6038e0
+__bulk_xfer : urb_buffer ptr = 0x6038e0,  buffer = USBC4Vx, urb_len = 13, ep = 81
+submit_urb : submiturb ret = 0 errno = 0
+__bulk_xfer : transfer->status = 0
+__bulk_xfer : urb->status = 0 actual_length = 0
+huawie_communication.c:send_eject_sequence:386: ret(read_bulk) = 0
+bulk_write : length = 62 and buffer = 5553424312345679000000000000061b000000020000000000000000000000
+__bulk_xfer : urbs = 0x1026010, nr_urbs = 1
+__bulk_xfer : buffer = 5553424312345679000000000000061b000000020000000000000000000000, 0x6030e0
+__bulk_xfer : urb_buffer ptr = 0x6030e0,  buffer = 5553424312345679000000000000061b000000020000000000000000000000, urb_len = 62, ep = 1
+submit_urb : submiturb ret = 0 errno = 0
+__bulk_xfer : transfer->status = 0
+__bulk_xfer : urb->status = 0 actual_length = 0
+send_eject_sequence : ret (bulk_write) = 0
+huawie_communication.c:send_eject_sequence:379: Read the response to message 2 (CSW) ...
+__bulk_xfer : urbs = 0x1026010, nr_urbs = 1
+__bulk_xfer : buffer = USBC4Vy, 0x6038e0
+__bulk_xfer : urb_buffer ptr = 0x6038e0,  buffer = USBC4Vy, urb_len = 13, ep = 81
+submit_urb : submiturb ret = 0 errno = 0
+__bulk_xfer : transfer->status = 0
+__bulk_xfer : urb->status = 0 actual_length = 0
+huawie_communication.c:send_eject_sequence:386: ret(read_bulk) = 0
+Reset message endpoint 0x81
+huawie_communication.c:ep_clear_halt:114: clear halt ret -1 errno 71
+Failed clear_halt error
+Could not reset endpoint = 81
+Reset response endpoint 0x01
+huawie_communication.c:ep_clear_halt:114: clear halt ret -1 errno 71
+Failed clear_halt error
+Could not reset endpoint = 1
+huawie_communication.c:release_interface:398: release interface ret = 0 errno = 71
+Interface realeased

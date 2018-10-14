@@ -1,0 +1,9 @@
+most of the modem are dual role like mass storage(SD) and modem
+
+So whenever they are plugged in, they are detected as mass storage rather than modem.
+
+We need to switch its mode, to detect it as model.
+
+In Windows, drivers are provided to handle this
+
+And Linux having usb_modeswitch utility to take care.
